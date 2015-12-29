@@ -17,10 +17,9 @@
 	 vagrant up;vagrant provision
     5. Login into the box 
     	vagrant ssh
-    6. Disconnect and then connect your android device from host machine
-    7. Start the docker container 
+    6. Start the docker container 
     	docker run -d --privileged -v /dev/bus/usb:/dev/bus/usb --name adbd sorccu/adb
-    8. Now execute to check the device connectivity with docker container 
+    7. Now execute to check the device connectivity with docker container 
     	docker run --rm -ti --net container:adbd sorccu/adb adb devices
     
 ##Thanks
